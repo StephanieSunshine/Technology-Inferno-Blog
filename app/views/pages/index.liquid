@@ -17,7 +17,7 @@ published: true
     <!--[if IE 7]>
       {{ 'fonts/font-awesome-ie7.min.css' | stylesheet_tag }}
     <![endif]-->
-
+		{% include fonts %}
     <!-- Le styles -->
     {{ 'bootstrap.css' | stylesheet_tag }}
     {{ 'bootstrap-responsive.css' | stylesheet_tag }}
@@ -31,7 +31,7 @@ published: true
     {% inline_editor %}
   </head>
 
-  <body>
+  <body style="background: url('images/technology-wallpaper2.jpg');">
 
     <div class="container-narrow">
 				
@@ -41,26 +41,27 @@ published: true
           <li><a href="/contact">Contact</a></li>
           <li><a href="/about">Projects</a></li>
         </ul>
-        <h3 class="muted">{{ site.name }}</h3>
+			<br />
       </div>
 
-      <hr>
 
       {% block 'main' %}
 
       <div class="jumbotron">
-        <h1>Technology Inferno</h1>
-        <p class="lead">A journal of my adventures in computing.</p>
+        <h1 style="color:white">Technology Inferno</h1>
+        <p class="lead muted">A journal of my adventures in computing.</p>
       </div>
 
-      <hr>
 		  <ul class="unstyled">
   			{% for posting in contents.data_entry %}
+					<div style="border-radius: 25px; border: 1px #aaaaaa solid; padding: 10px;">
     			<li>
-					<h3>{{ posting.title }}</h3><i>{{ posting.postingdate }}</i>
-					<p>{{ posting.description }}</p>
+					<em class="pull-right muted">{{ posting.postingdate || || localized_date: '%b %d, %Y'  }}</em>
+					<h3 style="color: white">{{ posting.title }}</h3>
+					<p class="muted">{{ posting.description }}</p>
 					</li>
-				<hr>
+					</div>
+					<br />
   			{% endfor %}
   		</ul>
       

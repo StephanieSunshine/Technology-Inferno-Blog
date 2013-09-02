@@ -17,6 +17,7 @@ published: true
     <!--[if IE 7]>
       {{ 'fonts/font-awesome-ie7.min.css' | stylesheet_tag }}
     <![endif]-->
+    {% include fonts %}
 
     <!-- Le styles -->
     {{ 'bootstrap.css' | stylesheet_tag }}
@@ -31,7 +32,7 @@ published: true
     {% inline_editor %}
   </head>
 
-  <body>
+  <body style="background: url('images/technology-wallpaper2.jpg');">
 
     <div class="container-narrow">
 
@@ -41,36 +42,35 @@ published: true
           <li><a href="/contact">Contact</a></li>
           <li class="active"><a href="/about">Projects</a></li>
         </ul>
-        <h3 class="muted">{{ site.name }}</h3>
-      </div>
+      <br />
+			</div>
 
-      <hr>
 
       {% block 'main' %}
 
       <div class="jumbotron">
-        <h1>Just who exactly is in charge here?</h1>
-        <p class="lead">Well I'm glad you asked.  Stephanie Sunshine, which also goes by the nicknames Ponyo and Fuzzy, is a technology explorer, a teacher, and an advocate of open source technologies.  Below are some of the projects she is involved with.</p>
+        <h1 style="color: white">Just who exactly is in charge here?</h1>
+        <p class="lead muted">Well I'm glad you asked.  Stephanie Sunshine, which also goes by the nicknames Ponyo and Fuzzy, is a technology explorer, a teacher, and an advocate of open source technologies.  Below are some of the projects she is involved with.</p>
         <!-- <a class="btn btn-large btn-success icon-flag" href="#">Sign up today</a> -->
       </div>
-
-      <hr>
+			
+			<br />
 
       <div class="row-fluid marketing">
         <div class="span6">
           <a href="http://www.neurobots.net/"><h4>neuroBots</h4></a>
-          <p>NeuroBots is a very cheap hosted bot system for the popular site <a href="http://www.turntable.fm">Turntable.fm</a>.  Wrote from scratch using Ruby, SQL, and jQuery, neuroBots provides a dynamic platform for room owners to create their very own fully customizeable robot to help with room moderation.</p>
+          <p class="muted">NeuroBots is a very cheap hosted bot system for the popular site <a href="http://www.turntable.fm">Turntable.fm</a>.  Wrote from scratch using Ruby, SQL, and jQuery, neuroBots provides a dynamic platform for room owners to create their very own fully customizeable robot to help with room moderation.</p>
 
           <a href="http://www.nirvanadesktop.com"><h4>Nirvana Desktop</h4></a>
-          <p>Nirvana Desktop is a clustered Linux desktop built to help small businesses to help them leverage all the power of Linux without sacrificing anything.  Using technologies such as <a href="http://www.ltsp.org">LTSP</a>, <a href="http://www.gluster.org">GlusterFS</a>, and <a href="http://aws.amazon.com/backup-storage/">Amazon backup services</a>.  Nirvana strives to be a complete end to end solution for companies looking for a complete end to end solution that is very cost effective and incredibly easy to maintain.</p>
+          <p class="muted">Nirvana Desktop is a clustered Linux desktop built to help small businesses to help them leverage all the power of Linux without sacrificing anything.  Using technologies such as <a href="http://www.ltsp.org">LTSP</a>, <a href="http://www.gluster.org">GlusterFS</a>, and <a href="http://aws.amazon.com/backup-storage/">Amazon backup services</a>.  Nirvana strives to be a complete end to end solution for companies looking for a complete end to end solution that is very cost effective and incredibly easy to maintain.</p>
 
           <!--<h4>Subheading</h4>
           <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>-->
         </div>
 
         <div class="span6">
-          <h4>Freetable</h4>
-          <p>Freetable is set to be an open source replacement of the popular music site <a href="http://www.turntable.fm">Turntable.fm</a>.  Created in a style that mimics online gaming platforms,  it is set to change the face on online music by making it dead simple for anyone to run their own music service.  Freetable supports roaming profiles network wide, the ability for anyone to start a network using any streamable media as the medium, custom 2d animated sprites, 3d custom models and more.  Freetable is currently in development, join our <a href="https://www.facebook.com/groups/601081349924245/">Facebook group</a> for more information.</p>
+          <a href="http://www.freetable.info/"><h4>Freetable</h4></a>
+          <p class="muted">Freetable is set to be an open source replacement of the popular music site <a href="http://www.turntable.fm">Turntable.fm</a>.  Created in a style that mimics online gaming platforms,  it is set to change the face on online music by making it dead simple for anyone to run their own music service.  Freetable supports roaming profiles network wide, the ability for anyone to start a network using any streamable media as the medium, custom 2d animated sprites, 3d custom models and more.  Freetable is currently in development, join our <a href="https://www.facebook.com/groups/601081349924245/">Facebook group</a> for more information.</p>
 
           <!-- <h4>Subheading</h4>
           <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -82,8 +82,7 @@ published: true
 
       {% endblock %}
 
-      <hr>
-
+			<br />
       {% include footer %}
 
     </div> <!-- /container -->

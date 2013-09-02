@@ -17,6 +17,7 @@ published: true
     <!--[if IE 7]>
       {{ 'fonts/font-awesome-ie7.min.css' | stylesheet_tag }}
     <![endif]-->
+    {% include fonts %}
 
     <!-- Le styles -->
     {{ 'bootstrap.css' | stylesheet_tag }}
@@ -31,7 +32,7 @@ published: true
     {% inline_editor %}
   </head>
 
-  <body>
+  <body style="background: url('images/technology-wallpaper2.jpg');">
 
     <div class="container-narrow">
 
@@ -41,25 +42,25 @@ published: true
           <li class="active"><a href="/contact">Contact</a></li>
           <li><a href="/about">Projects</a></li>
         </ul>
-        <h3 class="muted">{{ site.name }}</h3>
-      </div>
+      <br />
+			</div>
 
-      <hr>
 
       {% block 'main' %}
 
       <div class="jumbotron">
-        <h1>Get to know the person behind Technology Inferno</h1>
-        <p class="lead">Below are various links to get ahold of the person behind Technology Inferno.</p>
-        <a class="btn btn-large btn-info" href="mailto:stephanie@nirvanadesktop.com">Email</a>
-        <a class="btn btn-large btn-primary" href="https://www.facebook.com/stephanie.sunshine.520">Facebook</a>
+        <h1 style="color: white">Get to know the person behind Technology Inferno</h1>
+        <p class="lead muted">Below are various links to get ahold of the person behind Technology Inferno.</p>
+				<br />
+        <a class="btn btn-large btn-info" href="mailto:stephanie@nirvanadesktop.com">Email</a>&nbsp;&nbsp;
+        <a class="btn btn-large btn-primary" href="https://www.facebook.com/stephanie.sunshine.520">Facebook</a>&nbsp;&nbsp;
         <a class="btn btn-large btn-warning" href="http://www.turntable.fm/express_yourself9">Turntable</a>
       </div>
 
 
       {% endblock %}
 
-      <hr>
+			<br />
 
       {% include footer %}
 

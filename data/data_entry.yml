@@ -1,16 +1,8 @@
-- "Sample 1":
-    description: "Alias fuga velit ratione dolorum. Dolore quisquam libero eius consequuntur at beatae. Quam odit necessitatibus modi ea illum omnis ea."
-    postingdate: 2013/23/01 # YYYY/MM/DD
-
-- "Sample 2":
-    description: "Et magni recusandae a. Recusandae inventore ut nesciunt id tenetur quia quia. Aut id est maxime ea molestias."
-    postingdate: 2013/23/01 # YYYY/MM/DD
-
-- "Sample 3":
+- "The battle for decent 802.11n support in a USB wifi device under linux":
     description: "Facere saepe maxime quas ducimus dolor. Repellat provident accusamus nobis aliquam. Nostrum omnis totam voluptatibus aliquid ut porro distinctio. Omnis aut dolores labore odio magnam error molestiae rerum. Quidem voluptatem sed corrupti est eius ut iure voluptates."
-    postingdate: 2013/23/01 # YYYY/MM/DD
+    postingdate: 2013-08-25 
 
-- "Sample 4":
+- "Fun with Beaglebone Black and Varnish caching server":
     description: "Fugiat dolorum rerum explicabo eum sed vel. Minus consequatur ut illo incidunt labore quod. Voluptatibus ipsa commodi qui in. Et reiciendis corrupti aperiam et excepturi omnis incidunt in. Modi ad impedit dolorem consectetur sit quod placeat."
-    postingdate: 2013/23/01 # YYYY/MM/DD
+    postingdate: 2013-08-22 
 
