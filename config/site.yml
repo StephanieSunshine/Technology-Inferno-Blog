@@ -1,0 +1,16 @@
+# TODO: explain it
+name: Technology Inferno 
+
+# TODO: explain it
+subdomain: technologyinferno
+
+# TODO: explain it
+# domains: [www.example.com, example.com]
+domains: [ technologyinferno.indev.cc ]
+# TODO: explain it
+locales: [en]
+
+# TODO: explain it
+seo_title: Technology Inferno 
+meta_keywords: "Blog Linux Varnish Ruby Celluloid Openshift Networking Virtual Machine Xen Maria Mongo Redis Websockets"
+meta_description: "A journal of my adventures in computing"
