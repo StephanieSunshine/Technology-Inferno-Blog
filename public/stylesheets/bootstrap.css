@@ -209,7 +209,8 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #000000;
+  background-color: #000000; 
+  background: url('http://i.imgur.com/yqOcw0d.jpg'); 
 }
 
 a {
@@ -547,6 +548,7 @@ a:hover {
 }
 p {
   margin: 0 0 10px;
+  color: #999999;
 }
 .lead {
   margin-bottom: 20px;

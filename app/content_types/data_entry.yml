@@ -15,9 +15,11 @@ order_by: manually # default: manually, also available: created_at or any field 
 
 # Order direction
 # order_direction: asc # default: asc, also available: desc
+order_direction: desc
 
 # Display entries grouped by <field> in the backoffice
 # group_by: <your field>
+group_by: postingdate
 
 # Activate public 'create' API (e.g for a contact form)
 # public_submission_enabled: false
@@ -37,15 +39,15 @@ fields:
 - description: # Name of the field
     label: Description
     type: text
-    required: false
+    required: true
     hint: A description of the field for the editors
     localized: false
     # Enable or not the RTE [html|text]
-    # text_formatting: html
+    text_formatting: html
 
 - postingdate: # Name of the field
     label: Posting date
     type: date 
-    required: false
+    required: true
     hint: A description of the field for the editors
     localized: false

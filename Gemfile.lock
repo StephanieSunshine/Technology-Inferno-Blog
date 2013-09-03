@@ -48,7 +48,7 @@ GEM
     libv8 (3.16.14.3)
     listen (0.7.3)
     locomotive_liquid (2.4.2)
-    locomotivecms_mounter (1.2.5)
+    locomotivecms_mounter (1.2.6)
       RedCloth (~> 4.2.3)
       activesupport (~> 3.2.14)
       chronic (~> 0.9.1)
@@ -64,6 +64,8 @@ GEM
       mime-types (~> 1.19)
       multi_json (~> 1.2.0)
       sass (~> 3.2.1)
+      sprockets (~> 2.0)
+      sprockets-sass
       stringex (~> 1.4.0)
       tilt (= 1.3.3)
       zip (~> 2.0.2)

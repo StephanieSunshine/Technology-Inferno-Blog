@@ -31,7 +31,7 @@ published: true
     {% inline_editor %}
   </head>
 
-  <body style="background: url('images/technology-wallpaper2.jpg');">
+  <body>
 
     <div class="container-narrow">
 				
@@ -58,7 +58,7 @@ published: true
     			<li>
 					<em class="pull-right muted">{{ posting.postingdate || || localized_date: '%b %d, %Y'  }}</em>
 					<h3 style="color: white">{{ posting.title }}</h3>
-					<p class="muted">{{ posting.description }}</p>
+					<div style="padding: 10px">{{ posting.description }}</div>
 					</li>
 					</div>
 					<br />
