@@ -58,7 +58,7 @@ published: true
     			<li>
 					<em class="pull-right muted">{{ posting.postingdate || || localized_date: '%b %d, %Y'  }}</em>
 					<h3 style="color: white">{{ posting.title }}</h3>
-					<div style="padding: 10px"><p>{{ posting.description }}</p><p><a href="index.php?{{ posting._permalink }}">Permalink</a></p></div>
+					<div style="padding: 10px"><p>{{ posting.description }}</p><p><a href="index?{{ posting._permalink }}">Permalink</a></p></div>
 					</li>
 					</div>
 					<br />
